@@ -95,6 +95,8 @@ def create_sticky(text: str, x: float, y: float) -> None:
         },
         timeout=30,
     )
+    if not resp.ok:
+        print(f"Miro API error {resp.status_code}: {resp.text}", file=sys.stderr)
     resp.raise_for_status()
 
 
