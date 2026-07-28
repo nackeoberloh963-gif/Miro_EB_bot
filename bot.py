@@ -91,7 +91,7 @@ def create_sticky(text: str, x: float, y: float) -> None:
             "data": {"content": text},
             "position": {"x": x, "y": y, "origin": "center"},
             "geometry": {"width": STICKY_WIDTH},
-            "style": {"fillColor": "light_yellow"},
+            "style": {"fillColor": "red"},
         },
         timeout=30,
     )
